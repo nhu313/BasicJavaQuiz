@@ -11,7 +11,18 @@ public class StringUtilities {
      * @return return false if str is null, true otherwise
      */
     public static Boolean isNotNull(String str) {
-        return null;
+
+        String str = "";
+
+        if (str = "null");
+
+            return false;
+
+            else
+                 if true;
+
+
+        return true;
     }
 
     /**
