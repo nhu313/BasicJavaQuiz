@@ -11,7 +11,12 @@ public class ArrayLoop {
      * @return return an array with each number multiply by 3
      */
     public static int[] multiplyByThree(int[] numbers) {
-        return null;
+
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = numbers[i] * 3;
+        }
+
+        return numbers;
     }
 
 
@@ -25,6 +30,14 @@ public class ArrayLoop {
      * @return return the number of times the valueToCount appears in the array
      */
     public static Integer count(String[] values, String valueToCount) {
-        return null;
+        int count = 0;
+
+        for (int i = 0; i < values.length; i++) {
+            if(values[i].equals(valueToCount)) {
+                count++;
+            }
+        }
+
+        return count;
     }
 }
