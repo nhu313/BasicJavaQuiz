@@ -9,12 +9,16 @@ public class ArrayUtils {
     }
 
     public static String getLastElement(String[] values) {
-        int lastIndex = values.length-1;
+        int lastIndex = values.length - 1;
         return values[lastIndex];
 
     }
 
     public static String[] updateLastElement(String[] values, String carlton) {
-    return  null;
+        int length = values.length;
+        values[length - 1] = carlton;
+
+
+        return values;
     }
 }

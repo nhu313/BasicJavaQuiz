@@ -12,7 +12,11 @@ public class Loop {
      * @return the string with the letter repeated n times
      */
     public static String repeat(char charToRepeat, int numberOfTime) {
-return null;
+        String result = "";
+        for(int i =0; i < numberOfTime; i++) {
+            result = result + charToRepeat;
+        }
+        return result;
     }
 
     /**
@@ -25,12 +29,11 @@ return null;
      * @return the total from start to stop
      */
     public static int addUpTo(int start, int stop) {
-
-        int sum=0;
-        while(start<= stop) {
-            sum+=start;
-            start++;
+        int total = 0;
+        for(int i = start; i < stop; i++){
+            total =  total + i;
         }
-        return sum;
+        return total;
+
     }
 }
