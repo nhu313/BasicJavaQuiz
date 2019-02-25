@@ -12,8 +12,27 @@ public class Loop {
      * @return the string with the letter repeated n times
      */
     public static String repeat(char charToRepeat, int numberOfTime) {
-        return null;
+
+        if (numberOfTime <= 0) return "";
+        else if (numberOfTime % 2 == 0) return repeat((char) (charToRepeat+charToRepeat), numberOfTime/2);
+
+              else
+            return charToRepeat + repeat((char) (charToRepeat+charToRepeat), numberOfTime/2);
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
     /**
      * Given two integer, add from the start number up to, but not including the stop.
