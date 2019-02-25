@@ -91,7 +91,7 @@ public class StringUtilitiesTest {
         String[] expected = new String[]{"Hello world"};
 
         //When
-        String[] actual = StringUtilities.separateByExaclaimation(value);
+        String[] actual = StringUtilities.separateByExaclamation(value);
 
         //Then
         Assert.assertArrayEquals(expected, actual);
@@ -104,7 +104,7 @@ public class StringUtilitiesTest {
         String[] expected = new String[]{"this", "is", "a", "string", "test"};
 
         //When
-        String[] actual = StringUtilities.separateByExaclaimation(value);
+        String[] actual = StringUtilities.separateByExaclamation(value);
         System.out.println(Arrays.toString(actual));
         //Then
         Assert.assertArrayEquals(expected, actual);
