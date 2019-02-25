@@ -11,6 +11,11 @@ public class ArrayLoop {
      * @return return an array with each number multiply by 3
      */
     public static int[] multiplyByThree(int[] numbers) {
+//
+//        int multiplyByThree = new array[];
+//        for (int i = 0; i < numbers.length; i++) {
+//            int [i] * 3
+
         return null;
     }
 
