@@ -11,7 +11,22 @@ public class StringUtilities {
      * @return return false if str is null, true otherwise
      */
     public static Boolean isNotNull(String str) {
-        return null;
+
+        String str;
+        if((str.length() == 1) && (str.charAt(0) == null)) {
+        return false; }
+
+        if((str.charAt(str.length() - 1) == null) && ((str.charAt(1) != null))) {
+            return false; }
+
+        if((str.charAt(0) == null) && ((str.charAt(1) != null))) {
+            return false; }
+
+            for(int i = 1; i < str.length() - 1; i++) {
+                if(str.charAt(1) == null) {
+                    if((str.charAt(i + 1) != null) && (str.charAt(i - 1) != null)) {
+                        return false;}}}
+            return true;
     }
 
     /**
@@ -22,7 +37,14 @@ public class StringUtilities {
      * @return return the first and last character in a string
      */
     public static String firstAndLast(String value) {
-        return null;
+
+        String result = "";
+
+        char first = value.charAt(0);
+        char last = value.charAt(value.length() - 1)
+        result = first + last;
+
+        return result;
     }
 
     /**

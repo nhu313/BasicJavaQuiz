@@ -2,6 +2,7 @@ package com.zipcoder.quiz2;
 
 public class ArrayLoop {
 
+
     /**
      * Multiply each number in the array by 3. For example, given an array
      * {3, 1, 8} then calling method will return an array of
@@ -11,7 +12,12 @@ public class ArrayLoop {
      * @return return an array with each number multiply by 3
      */
     public static int[] multiplyByThree(int[] numbers) {
-        return null;
+
+        int [] result = new int [numbers.length];
+        for (int i = 1; i < result.length; i ++) {
+        result [i] = result[i] * 3;
+        }
+        return result;
     }
 
 
@@ -25,6 +31,12 @@ public class ArrayLoop {
      * @return return the number of times the valueToCount appears in the array
      */
     public static Integer count(String[] values, String valueToCount) {
-        return null;
+        int count = 0;
+        for (int i = 0; i < values.length; i++) {
+            if (values[i] == valueToCount) {
+                count++;
+            } else {
+                count = count;
+            }
+        return count;
     }
-}
