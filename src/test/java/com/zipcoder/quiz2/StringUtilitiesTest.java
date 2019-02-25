@@ -1,3 +1,5 @@
+package com.zipcoder.quiz2;
+
 import com.zipcoder.quiz2.StringUtilities;
 import org.junit.Assert;
 import org.junit.Test;
