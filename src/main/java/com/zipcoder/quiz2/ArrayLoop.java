@@ -10,11 +10,21 @@ public class ArrayLoop {
      * @param numbers to multiply
      * @return return an array with each number multiply by 3
      */
-    public static int[] multiplyByThree(int[] numbers) {
-        return null;
+
+
+    public static int[] multiplyByThree(int[] numbers) {return null;}{
+
+    int array = 1;
+
+
+    for(if int i = 0;i<array.length;i++){
+
+
+        array = i * 3;
     }
 
-
+    return array;
+}
     /**
      * Count how many times a value appears in the array. For example, given the values as
      * {"the", "apple", "is", "the", "fruit"} and valueToCount as "the", then the
@@ -27,4 +37,8 @@ public class ArrayLoop {
     public static Integer count(String[] values, String valueToCount) {
         return null;
     }
+
+
+
+
 }

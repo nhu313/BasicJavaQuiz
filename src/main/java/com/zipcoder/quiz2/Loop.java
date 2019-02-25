@@ -15,6 +15,8 @@ public class Loop {
         return null;
     }
 
+
+
     /**
      * Given two integer, add from the start number up to, but not including the stop.
      * For example, given start is 2 and stop is 5. The method should add 2 + 3 + 4 which
@@ -25,6 +27,17 @@ public class Loop {
      * @return the total from start to stop
      */
     public static int addUpTo(int start, int stop) {
-        return 0;
+
+        int total;
+
+        for (if int i = start;i <= stop;i++){
+
+
+
+            total = total + i;
+            {
+                return total;
+            }
+
+        }
     }
-}
