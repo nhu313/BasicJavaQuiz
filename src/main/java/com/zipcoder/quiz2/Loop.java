@@ -1,6 +1,6 @@
 package com.zipcoder.quiz2;
 
-public class Loop {
+public class Loop<result> {
 
     /**
      * Given a character, return a string with the character repeated n times
@@ -12,7 +12,14 @@ public class Loop {
      * @return the string with the letter repeated n times
      */
     public static String repeat(char charToRepeat, int numberOfTime) {
-        return null;
+
+        String result = "";
+        char charToRepeat;
+        char repeated = charToRepeat.repeat(3);
+
+        result = repeated.equals();
+
+        return result;
     }
 
     /**
@@ -25,6 +32,11 @@ public class Loop {
      * @return the total from start to stop
      */
     public static int addUpTo(int start, int stop) {
-        return 0;
+
+        Integer result = 0;
+        for (int i = 0; i <= start; i ++) && (int i = 0; i >= stop; i ++) {
+            result += i;}
+        }
+        return result;
     }
 }
