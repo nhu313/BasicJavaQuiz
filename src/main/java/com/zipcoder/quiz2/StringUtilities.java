@@ -22,7 +22,10 @@ public class StringUtilities {
      * @return return the first and last character in a string
      */
     public static String firstAndLast(String value) {
-        return null;
+
+        char firstLetter = value.charAt(0);
+        char lastLetter = value.charAt(value.length() -1);
+        return String.v alueOf((firstLetter + lastLetter));
     }
 
     /**

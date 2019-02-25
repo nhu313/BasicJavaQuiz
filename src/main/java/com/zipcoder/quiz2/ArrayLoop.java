@@ -1,5 +1,7 @@
 package com.zipcoder.quiz2;
 
+import java.util.ArrayList;
+
 public class ArrayLoop {
 
     /**
@@ -11,20 +13,32 @@ public class ArrayLoop {
      * @return return an array with each number multiply by 3
      */
     public static int[] multiplyByThree(int[] numbers) {
-        return null;
+
+        int array[] = new int[numbers.length];
+          for( int i = 0; i < numbers.length; i++)
+              {
+                  array[i] = numbers[i] * 3;
+               }//end for
+           return array;
     }
 
 
-    /**
-     * Count how many times a value appears in the array. For example, given the values as
-     * {"the", "apple", "is", "the", "fruit"} and valueToCount as "the", then the
-     * method will return 2 because the word "the" appears twice in the array
-     *
-     * @param values of String
-     * @param valueToCount
-     * @return return the number of times the valueToCount appears in the array
-     */
+        /**
+         * Count how many times a value appears in the array. For example, given the values as
+         * {"the", "apple", "is", "the", "fruit"} and valueToCount as "the", then the
+         * method will return 2 because the word "the" appears twice in the array
+         *
+         * @param values of String
+         * @param valueToCount
+         * @return return the number of times the valueToCount appears in the array
+         */
     public static Integer count(String[] values, String valueToCount) {
-        return null;
+        int counter = 0;
+        for (int i = 0; i < values.length; i++) {
+            if (values[i].equals(valueToCount)) {
+                counter++;
+            }
+        }
+        return counter;
     }
 }
