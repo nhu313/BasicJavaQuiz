@@ -11,8 +11,22 @@ public class StringUtilities {
      * @return return false if str is null, true otherwise
      */
     public static Boolean isNotNull(String str) {
-        return null;
+        boolean isNotNull = true;
+        if (isNotNull) {
+
+        isNotNull = false;
+        if (!isNotNull) {
+
+        }
+    } return true;
     }
+
+
+
+
+
+
+
 
     /**
      * Given a string, return the first and last characters of the string
@@ -22,8 +36,20 @@ public class StringUtilities {
      * @return return the first and last character in a string
      */
     public static String firstAndLast(String value) {
-        return null;
+
+       return null;
     }
+
+
+
+
+
+
+
+
+
+
+
 
     /**
      * Update the oldChar with the new character. For example, given
