@@ -1,6 +1,8 @@
 package com.zipcoder.quiz2;
 
 
+import java.util.ArrayList;
+
 public class StringUtilities {
 
     /**
@@ -11,7 +13,12 @@ public class StringUtilities {
      * @return return false if str is null, true otherwise
      */
     public static Boolean isNotNull(String str) {
-        return null;
+        if (str != null) {
+            return true;
+        } else {
+            return false;
+           }
+
     }
 
     /**
@@ -22,7 +29,12 @@ public class StringUtilities {
      * @return return the first and last character in a string
      */
     public static String firstAndLast(String value) {
-        return null;
+
+    String str = "";
+    str = str + value.charAt(0);
+    str = str + value.charAt(value.length()-1);
+        return str;
+
     }
 
     /**
@@ -36,7 +48,8 @@ public class StringUtilities {
      * @return
      */
     public static String change(String value, char oldChar, char newChar) {
-        return null;
+
+        return value.replace(oldChar, newChar);
     }
 
     /**
@@ -48,6 +61,7 @@ public class StringUtilities {
      * @return
      */
     public static String[] separateByExaclamation(String value) {
-        return null;
+
+        return value.split("!");
     }
 }
